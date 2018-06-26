@@ -1,5 +1,5 @@
 variable "subnet_cidr" {
-  type    = "string"
+  type = "string"
 }
 
 variable "existing-bbl-network" {
@@ -65,4 +65,3 @@ output "network" {
 output "subnetwork" {
   value = "${data.google_compute_subnetwork.bbl-subnet.name}"
 }
-

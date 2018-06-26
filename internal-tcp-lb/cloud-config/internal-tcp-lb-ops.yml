@@ -8,4 +8,3 @@
     cloud_properties:
       backend_service: {name: "((ilb_backend_service))", scheme: "INTERNAL"}
     name: ilb
-

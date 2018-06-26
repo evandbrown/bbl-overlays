@@ -1,0 +1,13 @@
+- type: replace
+  path: /networks/name=default/subnets/1/cloud_properties?
+  value:
+    tags:
+      - ((nat_routing_tag))
+    ephemeral_external_ip: false
+
+- type: replace
+  path: /networks/name=default/subnets/2/cloud_properties?
+  value:
+    tags:
+      - ((nat_routing_tag))
+    ephemeral_external_ip: false
